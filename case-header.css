@@ -7,7 +7,7 @@
 .case-page .fw-layout .fw-section.case-section{scroll-margin-top:96px}
 .case-arrow{width:calc(18px / var(--canvas-scale,1))!important;height:calc(18px / var(--canvas-scale,1))!important;flex:0 0 calc(18px / var(--canvas-scale,1))!important;vertical-align:middle}
 .case-arrow img{position:absolute;left:0;top:0;width:auto;height:auto;max-width:none;transform-origin:top left}
-.case-arrow-glyph,.case-page .next-project>.case-arrow-glyph{font-size:18px;line-height:1;vertical-align:middle}
+.case-arrow-glyph,.case-page .next-project>.case-arrow-glyph,.case-page .prev-project>.case-arrow-glyph{font-size:18px;line-height:1;vertical-align:middle}
 .case-page .fw-challenge-arrow{display:flex;align-items:center;justify-content:center}
 @media(max-width:780px){.case-header{height:54px}.case-header-inner{width:88%}.case-page .case-aside{top:54px;max-height:none;overflow-x:auto;overflow-y:hidden}.case-page .fw-layout .fw-section.case-section{scroll-margin-top:126px}}
 

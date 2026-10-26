@@ -131,3 +131,5 @@
 
 /* Give the challenge connector its own readable size. */
 .fw-layout .fw-challenge-arrow>.fw-icon{width:52px;height:26px;flex:0 0 52px}
+
+.futures .end-nav{margin-top:65px}
