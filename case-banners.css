@@ -1,0 +1,52 @@
+/* Native Figma banner geometry; headers stay usable as the viewport narrows. */
+.case-page{--case-header-height:clamp(54px,3.229167vw,62px)}
+.case-page .case-header{height:var(--case-header-height);border-bottom:0}
+.case-page .case-header-inner{width:79.0625%}
+.case-page .case-header-inner>a{gap:clamp(6px,.416667vw,8px);font-size:clamp(16px,1.041667vw,20px);font-weight:500;letter-spacing:.08em}
+.case-back-icon{width:clamp(18px,1.25vw,24px);height:clamp(15px,1.041667vw,20px);flex:0 0 clamp(18px,1.25vw,24px)}
+.case-page .case-banner{--banner-height:45.989583vw;position:relative;display:block;width:100%;height:calc(var(--banner-height) - var(--case-header-height));min-height:0;aspect-ratio:auto;background:none;isolation:isolate;overflow:hidden}
+.case-page .case-banner:before,.case-page .case-banner:after{content:none}
+.case-page .case-banner-futures{--banner-height:45.520833vw;--banner-surface:#e4eef6}
+.case-page .case-banner-milo{--banner-surface:#d2d9d2}
+.case-page .case-banner-regular{--banner-surface:#f6e1e6}
+.case-banner-canvas{position:absolute;left:0;top:calc(0px - var(--case-header-height));width:100%;height:var(--banner-height);background:var(--banner-surface)}
+.case-banner-futures .case-banner-canvas{background:linear-gradient(180deg,#bce0f1,#e4eef6)}
+.case-banner-art{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.case-banner-art>img{position:absolute;display:block;max-width:none}
+.case-banner-photo{left:0;top:0;width:100%;height:100%}
+.case-banner-gradient{position:absolute;left:-3.125%;top:-45.866365%;width:112.96875%;height:184.258211%;background:linear-gradient(88.6563905deg,rgba(210,217,210,.8) 24.334%,rgba(255,255,255,0) 81.169%)}
+.case-banner-regular .case-banner-gradient{background:linear-gradient(88.6563905deg,rgba(246,225,230,.9) 24.334%,rgba(255,255,255,0) 81.169%)}
+.case-banner-coin-right{left:84.6875%;top:28.032037%;width:15.3125%;height:35.469108%}
+.case-banner-coin-left{left:1.666667%;top:77.231121%;width:19.0625%;height:22.768879%}
+.case-banner-monitor{left:45.572917%;top:19.679634%;width:39.114583%;height:71.052632%}
+.case-banner-word{position:absolute;display:block;margin:0;font-size:11.979167vw;line-height:1.2;font-weight:700;letter-spacing:.08em;white-space:nowrap;background:linear-gradient(0deg,#ffffff4d,#ffffffb3);background-clip:text;-webkit-background-clip:text;color:transparent}
+.case-banner-word-futures{left:7.34375%;top:6.407323%}
+.case-banner-word-warbler{left:45.364583%;top:76.659039%}
+.case-page .case-banner .fw-cover-copy{position:absolute;left:14.0625%;top:32.502831%;bottom:auto;width:27.135417%;max-width:none;margin:0;padding:0;color:#000}
+.case-page .case-banner-futures .fw-cover-copy{top:39.702517%}
+.case-page .case-banner-milo .fw-cover-copy{width:22.291667%}
+.case-banner-number{display:block;font-size:clamp(26px,2.604167vw,64px);font-weight:500;line-height:1.2;letter-spacing:0;margin:0;color:#000}
+.case-page .case-banner .fw-cover-copy h1{font-size:clamp(18px,1.875vw,46px);font-weight:700;line-height:1.5;letter-spacing:.08em;white-space:nowrap;margin:0;color:var(--fw-blue)}
+.case-page .case-banner-futures .fw-cover-copy h1{color:#2162b6}
+.case-page .case-banner .fw-cover-copy p{font-size:clamp(14px,1.354167vw,33px);font-weight:500;line-height:1.5;letter-spacing:.08em;max-width:none;margin:0}
+.case-page .case-banner-milo .fw-cover-copy p,.case-page .case-banner-regular .fw-cover-copy p{text-align:justify}
+@media(max-width:780px){
+ .case-page{--case-header-height:54px}
+ .case-page .case-header-inner{width:86%}
+ .case-page .case-header-inner>a{font-size:16px;gap:8px}
+ .case-page .case-banner{height:auto;--mobile-visual-height:clamp(240px,55vw,340px)}
+ .case-banner-canvas{position:relative;top:auto;height:auto;min-height:0;padding:calc(var(--mobile-visual-height) + 20px) 7% 32px}
+ .case-banner-photo{width:100%;height:var(--mobile-visual-height);object-fit:cover;object-position:70% center}
+ .case-banner-gradient,.case-banner-regular .case-banner-gradient{left:0;top:0;width:100%;height:calc(var(--mobile-visual-height) + 1px);background:linear-gradient(0deg,var(--banner-surface),transparent 50%)}
+ .case-banner-coin-right{left:84.6875%;top:30px;width:15.3125%;height:auto}
+ .case-banner-coin-left{left:1.666667%;top:calc(var(--mobile-visual-height) - 45px);width:19.0625%;height:auto}
+ .case-banner-monitor{left:24%;top:10px;width:76%;height:calc(var(--mobile-visual-height) - 20px);object-fit:contain;object-position:right center}
+ .case-banner-word{font-size:17vw}
+ .case-banner-word-futures{left:7%;top:4px}
+ .case-banner-word-warbler{left:35%;top:calc(var(--mobile-visual-height) - 45px)}
+ .case-page .case-banner .fw-cover-copy,.case-page .case-banner-futures .fw-cover-copy,.case-page .case-banner-milo .fw-cover-copy{position:relative;left:auto;top:auto;bottom:auto;width:100%;margin:0;padding:0}
+ .case-banner-number{font-size:36px;line-height:1.2}
+ .case-page .case-banner .fw-cover-copy h1{font-size:28px;white-space:normal}
+ .case-page .case-banner .fw-cover-copy p{font-size:16px;line-height:1.7;text-align:left}
+}
+@media(max-width:520px){.case-page .case-banner .fw-cover-copy h1{font-size:25px}.case-page .case-banner .fw-cover-copy p{font-size:15px}}
